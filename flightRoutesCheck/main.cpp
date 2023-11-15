@@ -19,23 +19,19 @@ void BFS(bool normal=true){
         if(normal) {
             last = node;
         }
-        //normal/inverted switch
-        if(normal) {
-            visited[node] = true;
-        } else {
-            invVisited[node] = true;
-        }
         q.pop();
         //normal/inverted switch
         if(normal) {
             for (auto itr: g[node]) {
                 if (!visited[itr]) {
+                    visited[itr]=true;
                     q.push(itr);
                 }
             }
         } else {
             for(auto itr: invg[node]){
                 if(!invVisited[itr]){
+                    invVisited[itr]=true;
                     q.push(itr);
                 }
             }
@@ -93,15 +89,45 @@ int main() {
     cout << endl;
 #endif
 
-    if(accumulate(visited.begin(),visited.end(),0)!=n || accumulate(invVisited.begin(),invVisited.end(),0)!=n){
+    int normalsum= accumulate(visited.begin(),visited.end(),0);
+    int invertedsum = accumulate(invVisited.begin(),invVisited.end(),0);
+    if(normalsum!=n || invertedsum!=n){
+        //this part is incredibly ugly, but it essentially checks which route could access more vertices
+        //and tries to find the needed path between 2 vertices based on which was visited before in which path
         cout << "NO" << endl;
-        for(int i=1;i<=n;i++){
-            if(!invVisited[i]){
-                cout << i << " ";
-                break;
+        if(normalsum>invertedsum) {
+            for (int i = 1; i <= n; i++) {
+                if (!invVisited[i]) {
+                    cout << i << " ";
+                    if (i == last) {
+                        for (int j = 1; j <= n; j++) {
+                            if (!visited[j]) {
+                                cout << j << endl;
+                            }
+                        }
+                    } else {
+                        cout << last << endl;
+                    }
+                    break;
+                }
+            }
+        } else {
+            for (int i = 1; i <= n; i++) {
+                if (!visited[i]) {
+                    if (i == last) {
+                        for (int j = 1; j <= n; j++) {
+                            if (!invVisited[j]) {
+                                cout << j << " ";
+                            }
+                        }
+                    } else {
+                        cout << last << " ";
+                    }
+                    cout << i << endl;
+                    break;
+                }
             }
         }
-        cout << last << endl;
     } else {
         cout << "YES" << endl;
     }

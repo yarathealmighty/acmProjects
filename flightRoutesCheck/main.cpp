@@ -1,6 +1,7 @@
+//https://cses.fi/problemset/task/1682
 #include <bits/stdc++.h>
 #define endl "\n"
-#define BUG
+//#define BUG
 
 using namespace std;
 
@@ -13,8 +14,11 @@ int last;
 
 void BFS(bool normal=true){
     while(!q.empty()){
-        last = q.front();
         int node = q.front();
+        //we don't need this in the inverted traverse but will come handy later
+        if(normal) {
+            last = node;
+        }
         //normal/inverted switch
         if(normal) {
             visited[node] = true;
@@ -58,12 +62,16 @@ int main() {
     q.push(1);
     BFS();
 
-    //inverted traverse
-    fill(visited.begin(),visited.end(),false);
-    q.push(last);
-    BFS(false);
 #ifdef BUG
     cout << "[LOG]last: " << last << endl;
+#endif
+
+    //inverted traverse
+    fill(invVisited.begin(),invVisited.end(),false);
+    q.push(last);
+    BFS(false);
+
+#ifdef BUG
     cout << "[LOG]visited: " << accumulate(visited.begin(),visited.end(),0) << endl;
     for(int i=1;i<=n;i++){
         if(visited[i]){
@@ -84,9 +92,16 @@ int main() {
     }
     cout << endl;
 #endif
+
     if(accumulate(visited.begin(),visited.end(),0)!=n || accumulate(invVisited.begin(),invVisited.end(),0)!=n){
         cout << "NO" << endl;
-        //todo print vertices that don't match (also figure out how to do that) or find out the first one that neither visited nor invVisited contains
+        for(int i=1;i<=n;i++){
+            if(!invVisited[i]){
+                cout << i << " ";
+                break;
+            }
+        }
+        cout << last << endl;
     } else {
         cout << "YES" << endl;
     }

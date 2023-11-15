@@ -1,3 +1,0 @@
-D:/ACM stuff mostly/acmProjects/giantPizza/cmake-build-debug/CMakeFiles/giantPizza.dir
-D:/ACM stuff mostly/acmProjects/giantPizza/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ACM stuff mostly/acmProjects/giantPizza/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+D:/clino projects/countingRooms/cmake-build-debug/CMakeFiles/countingRooms.dir
+D:/clino projects/countingRooms/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clino projects/countingRooms/cmake-build-debug/CMakeFiles/rebuild_cache.dir

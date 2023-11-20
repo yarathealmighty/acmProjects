@@ -1,0 +1,3 @@
+D:/clino projects/ubuildingteams/cmake-build-debug/CMakeFiles/ubuildingteams.dir
+D:/clino projects/ubuildingteams/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clino projects/ubuildingteams/cmake-build-debug/CMakeFiles/rebuild_cache.dir

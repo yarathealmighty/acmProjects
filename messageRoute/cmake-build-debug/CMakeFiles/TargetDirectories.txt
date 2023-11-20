@@ -1,0 +1,3 @@
+D:/clino projects/messageRoute/cmake-build-debug/CMakeFiles/messageRoute.dir
+D:/clino projects/messageRoute/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clino projects/messageRoute/cmake-build-debug/CMakeFiles/rebuild_cache.dir

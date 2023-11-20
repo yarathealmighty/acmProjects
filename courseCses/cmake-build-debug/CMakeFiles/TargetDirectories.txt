@@ -1,0 +1,3 @@
+D:/clino projects/courseCses/cmake-build-debug/CMakeFiles/courseCses.dir
+D:/clino projects/courseCses/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clino projects/courseCses/cmake-build-debug/CMakeFiles/rebuild_cache.dir

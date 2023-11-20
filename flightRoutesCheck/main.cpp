@@ -1,7 +1,7 @@
 //https://cses.fi/problemset/task/1682
 #include <bits/stdc++.h>
 #define endl "\n"
-//#define BUG
+#define BUG
 
 using namespace std;
 

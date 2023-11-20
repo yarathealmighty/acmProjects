@@ -1,0 +1,21 @@
+# ninja log v5
+0	3060	7095070041938007	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+3064	3951	7095070050630601	buildingroads.exe	24a2f3bc337ee479
+3	2050	7095070768299534	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2050	2238	7095070770124041	buildingroads.exe	24a2f3bc337ee479
+5	2132	7095075544051268	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2132	2333	7095075546125643	buildingroads.exe	24a2f3bc337ee479
+7	2088	7095082514337394	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2089	2290	7095082516310854	buildingroads.exe	24a2f3bc337ee479
+5	2059	7095083009102419	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2059	2243	7095083010918547	buildingroads.exe	24a2f3bc337ee479
+11	2058	7095083461773028	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2059	2352	7095083464450276	buildingroads.exe	24a2f3bc337ee479
+3	1874	7095085377657309	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+1875	2008	7095085378928488	buildingroads.exe	24a2f3bc337ee479
+11	2009	7095085584767272	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2009	2227	7095085586901925	buildingroads.exe	24a2f3bc337ee479
+4	2033	7095085816107025	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+2034	2223	7095085817955574	buildingroads.exe	24a2f3bc337ee479
+4	1916	7095088206628113	CMakeFiles/buildingroads.dir/main.cpp.obj	1892f736d4fc29cf
+1916	2048	7095088207878213	buildingroads.exe	24a2f3bc337ee479

@@ -1,0 +1,3 @@
+D:/clino projects/companyQueries1/cmake-build-debug/CMakeFiles/companyQueries1.dir
+D:/clino projects/companyQueries1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clino projects/companyQueries1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
